@@ -1,13 +1,15 @@
 var express = require('express');
 var router = express.Router();
 
-const ctrlMain = require('../controllers/main');
-router.get('/',ctrlMain.index)
+const ctrlLocation = require('../controllers/locations');
+const ctrlOther = require('../controllers/others');
 
 
-const homepageController = (req, res) =>{
-  res.render('index',{ title: 'Express by Wonminho' });
-};
-router.get('/',homepageController);
+router.get('/',ctrlLocation.homelist);
+router.get('/location',ctrlLocation.locationInfo);
+router.get('/review/new',ctrlLocation.addReview);
+
+router.get('/about',ctrlOther.about);
+
 
 module.exports = router;
