@@ -7,7 +7,29 @@ const homelist = (req, res) => {
           strapLine: 'Find places to work with wifi near you!'
         },
         sidebar: "Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.",
-        locations
+        locations:[
+            {
+                name: 'Starcups',
+                address: '125 Heigh Street, Reading , RG6 1Ps',
+                rating: 3,
+                facilities: ['Hot drinks', 'Food', 'Premiun wifi'],
+                distance: '100m'
+            },
+            {
+                name: 'Cafe Hero',
+                address: '125 Heigh Street, Reading , RG6 1Ps',
+                rating: 4,
+                facilities: ['Hot drinks', 'Food', 'Premiun wifi'],
+                distance: '200m'
+            },
+            {
+                name: 'Burger Queen',
+                address: '125 Heigh Street, Reading , RG6 1Ps',
+                rating: 2,
+                facilities: ['Food', 'Premiun wifi'],
+                distance: '250m'
+            }
+        ]
       }
     );
   };
