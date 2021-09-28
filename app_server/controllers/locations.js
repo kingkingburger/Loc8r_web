@@ -10,24 +10,38 @@ const homelist = (req, res) => {
             locations: [
                 {
                     name: 'Starcups',
-                    address: '125 High Street, Reading, RG6 1PS',
+                    address: '경기도 의왕시 오전동 등칙골 12',
                     rating: 3,
                     facilities: ['Hot drinks', 'Food', 'Premium wifi'],
                     distance: '100m'
                 },
                 {
                     name: 'Cafe Hero',
-                    address: '125 High Street, Reading, RG6 1PS',
+                    address: '경기도 의왕시 고천동 갈매기길',
                     rating: 3,
                     facilities: ['Hot drinks', 'Food', 'Premium wifi'],
                     distance: '200m'
                 },
                 {
                     name: 'Burger Queen',
-                    address: '125 High Street, Reading, RG6 1PS',
+                    address: '경기도 수원시 장원동',
                     rating: 3,
                     facilities: ['Hot drinks', 'Food', 'Premium wifi'],
                     distance: '250m'
+                },
+                {
+                    name: '스카이넷pc',
+                    address: '경기도 안성시',
+                    rating: 3,
+                    facilities: ['Hot drinks', 'Food', 'Premium wifi'],
+                    distance: '800m'
+                },
+                {
+                    name: 'Cafe benetic',
+                    address: '서울특별시 관악구 호암로 300',
+                    rating: 3,
+                    facilities: ['Hot drinks', 'Food', 'Premium wifi'],
+                    distance: '900m'
                 }
             ]
         }
