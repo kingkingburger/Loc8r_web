@@ -35,7 +35,7 @@ const homelist = (req, res) => {
 };
 
 const locationInfo = (req, res) => {
-    res.render('location-info',
+    res.render('locations-Info',
         {
             title: 'Starcups',
             pageHeader: {
@@ -50,7 +50,7 @@ const locationInfo = (req, res) => {
                 address: '125 High Street, Reading, RG6 1PS',
                 rating: 3,
                 facilities: ['Hot drinks', 'Food', 'Premium wifi'],
-                coords: { lat: 51.455041, lng: -0.9690884 },
+                coords: { lat: 37.35262356893374, lng: 126.97324254928807 },
                 openingTimes: [
                     {
                         days: 'Monday - Friday',
