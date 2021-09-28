@@ -25,21 +25,21 @@ const homelist = (req, res) => {
                 {
                     name: 'Burger Queen',
                     address: '경기도 수원시 장원동',
-                    rating: 3,
+                    rating: 4,
                     facilities: ['Hot drinks', 'Food', 'Premium wifi'],
                     distance: '250m'
                 },
                 {
                     name: '스카이넷pc',
                     address: '경기도 안성시',
-                    rating: 3,
+                    rating: 5,
                     facilities: ['Hot drinks', 'Food', 'Premium wifi'],
                     distance: '800m'
                 },
                 {
                     name: 'Cafe benetic',
                     address: '서울특별시 관악구 호암로 300',
-                    rating: 3,
+                    rating: 5,
                     facilities: ['Hot drinks', 'Food', 'Premium wifi'],
                     distance: '900m'
                 }
@@ -61,7 +61,7 @@ const locationInfo = (req, res) => {
             },
             location: {
                 name: 'Starcups',
-                address: '125 High Street, Reading, RG6 1PS',
+                address: '경기도 의왕시 오전동 등칙골 12',
                 rating: 3,
                 facilities: ['Hot drinks', 'Food', 'Premium wifi'],
                 coords: { lat: 37.35262356893374, lng: 126.97324254928807 },
