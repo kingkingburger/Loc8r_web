@@ -14,11 +14,12 @@ block content
           .card-block
             h4
               a(href='/location')= location.name
-              +ouputRating(location.rating)
+              small &nbsp;
+                +ouputRating(location.rating)
               span.badge.badge-pill.badge-default.float-right= location.distance
             p.address= location.address
             .facilities
-              each location in locations
-                span.badge.badge-warning= facilities
+              each facility in locations.facilities
+                span.badge.badge-warning= facility
     .col-12.col-md-4
       p.lead= sidebar
