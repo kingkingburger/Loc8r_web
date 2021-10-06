@@ -1,0 +1,18 @@
+{
+    "indexes": [
+        {
+            "v": {
+                "$numberInt": "2"
+            },
+            "key": {
+                "_id": {
+                    "$numberInt": "1"
+                }
+            },
+            "name": "_id_"
+        }
+    ],
+    "uuid": "3092df2a00b14fb7a55163d8c8684446",
+    "collectionName": "locations",
+    "type": "collection"
+}
