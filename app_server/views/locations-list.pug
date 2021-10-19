@@ -7,6 +7,11 @@ block content
       h1= pageHeader.title
         small &nbsp;#{pageHeader.strapline}
 
+  .row 
+    .col-12.col-md-8 
+      .error= message
+
+
   .row
     .col-12.col-md-8
       each location in locations
