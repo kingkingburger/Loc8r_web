@@ -2,8 +2,6 @@ const mongoose = require("mongoose");
 const Loc = mongoose.model('Location');
 
 
-
-
 const locationsReadOne = (req, res) => {
     Loc
         .findById(req.params.locationid)
@@ -166,7 +164,7 @@ const locationsUpdateOne = (req, res) =>{
                 } else{
                     res
                         .status(200)
-                        .json(err)
+                        .json(loc)
                 }
             });
         })

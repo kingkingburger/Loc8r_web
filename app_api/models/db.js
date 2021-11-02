@@ -1,8 +1,8 @@
 require('./locations')
 const mongoose = require('mongoose');
 var gracefulShutdown;
-const dbURI = 'mongodb://localhost/Loc8r';
-//const dbURI = 'mongodb+srv://my_atlas_user:1234@cluster0.thgqm.mongodb.net/Loc8r';
+//const dbURI = 'mongodb://localhost/Loc8r';
+const dbURI = 'mongodb+srv://my_atlas_user:1234@cluster0.thgqm.mongodb.net/Loc8r';
 mongoose.connect(dbURI, {userNewUrlParser: true});
 //, {userNewUrlParser: true}
 mongoose.connection.on('connected',function(){
