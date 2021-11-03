@@ -140,7 +140,6 @@ const addReview = (req, res) => {
 };
 
 
-
 const doAddReview = (req,res) =>{
     const locationid = req.params.locationid;
     const path = `/api/locations/${locationid}/reviews`;
