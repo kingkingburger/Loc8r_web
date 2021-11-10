@@ -10,12 +10,11 @@
                 <i class="fa{{location.rating < 5 ? 'r': 's'}} fa-star"></i>
                 
             </small>
-            <span class="badge badge-pill badge default float right">{{location.distance | distance}}</span>
+            <span class="badge badge-pill badge-default float-right">{{location.distance | distance}}</span>
         </h4>
         <p class="address">{{location.address | uppercase}}</p>
         <div class="facilities">
             <span *ngFor="let facilities of location.facilities" class="badge badge-warning">{{facilities}}</span>
-            <span class="badge badge-warning">2016265154원민호</span>
         </div>
     </div>
 </div>
