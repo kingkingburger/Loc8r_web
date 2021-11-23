@@ -34,10 +34,13 @@ app.get('*', function(req, res, next) {
   res.sendFile(path.join(__dirname, 'app_public', 'build', 'index.html'));
 });
 
+<<<<<<< HEAD
 // app.get(/(\/about)|(\/location\/[a-z0-9]{24})/, function(req, res, next) {
 //   res.sendFile(path.join(__dirname, 'app_public', 'build', 'index.html'));
 // });
 
+=======
+>>>>>>> 1e2ac6bcf778252c55f62f6c514c0dedd741a890
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
