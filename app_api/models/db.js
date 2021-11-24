@@ -1,4 +1,5 @@
 require('./locations')
+require('./users');
 const mongoose = require('mongoose');
 var gracefulShutdown;
 //const dbURI = 'mongodb://localhost/Loc8r';
