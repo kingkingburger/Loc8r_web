@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 import { AuthenticationService } from "../authentication.service";
-
+import { HistoryService } from '../history.service';
 
 
 @Component({
@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
   constructor(
     private router: Router,
     private authenticationService: AuthenticationService,
+    private historyService: HistoryService
   ) { }
 
   ngOnInit(): void {
@@ -39,10 +40,15 @@ export class LoginComponent implements OnInit {
     }
   }
 
+  // private doLogin(): void {
+  //   //form에서 들어온 값으로 등록을 하고
+  //   this.authenticationService.login(this.credentials).then(() => this.router.navigateByUrl('/'))
+  //   //초기 화면으로 돌려보냅니다. 
+  //   .catch((message) => this.formError = message);
+  // }
   private doLogin(): void {
-    //form에서 들어온 값으로 등록을 하고
-    this.authenticationService.login(this.credentials).then(() => this.router.navigateByUrl('/'))
-    //초기 화면으로 돌려보냅니다. 
-    .catch((message) => this.formError = message);
+    this.authenticationService.login(this.credentials)
+      .then(() => this.router.navigateByUrl(this.historyService.getLastNonLoginUrl()))
+      .catch((message) => this.formError = message);
   }
 }
